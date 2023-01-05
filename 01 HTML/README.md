@@ -387,3 +387,148 @@ Nested-Table:
 </html>
 ```
 </details>
+
+<details>
+<summary>HTML-Day-03</summary>
+favicon (can be used before or after title):
+
+Shortcut--> link:favicon
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/dotty/80/null/pixel-cat.png" type="image/x-icon">
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+using icons8:
+
+```
+*search any icon
+*select icon
+*click on download
+*select {Link (CDN)}
+*now copy {Paste this fragment into your HTML} section
+```
+
+Audio tag:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon , Audio & Video</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/dotty/80/null/pixel-cat.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Audios & Videos....</h1>
+    <audio src="./audio/retro.wav" controls autoplay loop muted>
+        your browser doesn't support audio <!-- If a browser does not support audio this will show up  -->
+    </audio>
+</body>
+</html>
+```
+
+Video Tag:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon , Audio & Video</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/dotty/80/null/pixel-cat.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Audios & Videos....</h1>
+    <video src="./video/nature.mp4" controls width="300px" autoplay loop muted>
+        your browser doesn't support video <!-- If a browser does not support video this will show up  -->
+    </video>
+</body>
+
+</html>
+```
+
+Iframe Tag:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe src="https://en.wikipedia.org/wiki/Sparrow" width="500px" height="300px" frameborder="0"></iframe>
+    
+    <!-- Youtube  -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jHWKtQHXVJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
+```
+
+Semantic Shortcut:
+
+```html
+article*4>h2{Blog title - $}+p{Author: A-$ | Published: B-$}+p{This is blog body...}+a[href="#"]{Read more}
+```
+
+entity - copyright:
+
+```html
+<p>&copy;</p>
+```
+
+Form radio & checkbox difference:
+
+```html
+<!-- Can Choose single if name = similar -->
+<p>Select your gender: 
+            <input type="radio" name="gender" id="">Male
+            <input type="radio" name="gender" id="">Female
+</p>
+<!-- Can Choose multiple if name = different -->
+<p>
+            Select your languages and frameworks:
+            <input type="radio" name="lang" id="">JS
+            <input type="radio" name="frame" id="">React
+</p>
+
+<!-- on the otherhand check box can be choose all available content -->
+```
+
+field set is used in form when there is many section using legend to organized it more
+
+```html
+<fieldset>
+            <legend>Personal Informations...</legend>
+            <p>First Name: <input type="text" name="first-name" id="" required></p>
+            <p>Last Name: <input type="text" name="last-Name" id="" required></p>
+            <p>Email: <input type="email" name="email" id="" placeholder="example@gmail.com" required></p>
+            <p>Phone number: <input type="tel" name="" id=""></p>
+            <p>Password: <input type="password" name="" id=""></p>
+            <p>Select your gender:
+                <input type="radio" name="gender" id="">Male
+                <input type="radio" name="gender" id="">Female
+            </p>
+        </fieldset>
+```
+</details>
