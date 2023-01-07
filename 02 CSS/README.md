@@ -128,3 +128,85 @@ margin: 200px 100px 300px 50px; /*top-right-bottom-left  */
 
 CSS box Model from Inspect
 </details>
+
+<details>
+<summary>CSS-Day-02</summary>
+
+Outline:
+
+it is used outside design of the border:
+
+```css
+.container{
+    width: 75%;
+    background-color: hotpink;
+    padding: 25px;
+    margin: 50px;
+    border: 5px solid black;
+    border-radius: 20px 0 20px 0;
+    outline: 5px dashed blue;
+    outline-offset: 10px;
+}
+```
+
+Default font size:
+
+```css
+.wrapper p{
+    font-size: 1rem; or 16px
+}
+/* 1rem == 16px */
+```
+
+Pixel vs rem vs em
+
+```
+16px = 1rem
+but for em it works different relatively to that selected tag:
+example 
+for p , 1em = 16px
+for h1 it is different.
+```
+
+Block vs Inline element:
+
+```
+A block-level element always takes up the full width available.
+example : <p>
+
+An inline element only takes up as much width as necessary.
+example : <a>
+***margin works only left-right***
+```
+
+inline behave as block element—>inline-block element:
+
+```css
+display: inline-block
+```
+
+Importing google font:
+
+```css
+/* select font and copy import code */
+<style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); </style>
+```
+
+Link State:
+
+```
+1. Link
+2. Visited
+3. Active
+4. Hover
+```
+
+pseudo class:
+
+```css
+a:link{
+    
+}
+```
+
+</details>
