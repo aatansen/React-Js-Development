@@ -1,0 +1,16 @@
+/* This is a comment  */
+h2{
+    color: rgb(21, 255, 0);
+    background-color:antiquewhite;
+}
+
+#author-date{
+    color: rgb(128, 0, 43);
+    background-color: black;
+}
+.color-paragraph {
+    color: crimson;
+}
+p span {
+    color: blueviolet;
+}
