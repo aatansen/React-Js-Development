@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #444;
+  background-color: whitesmoke;
+}
+
+header .logo h1 {
+  text-transform: uppercase;
+  word-spacing: 8px;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.car-bg-container {
+  width: 100%;
+  height: 70vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: contain; */
+  background-attachment: fixed;
+}
+
+.lamborghini {
+  background-image: url(https://images.unsplash.com/photo-1570294646112-27ce4f174e38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1199&q=80);
+}
+.bmw {
+  background-image: url(https://images.unsplash.com/photo-1556189250-72ba954cfc2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+.range-rover {
+  background-image: url(https://images.unsplash.com/photo-1563720223185-11003d516935?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+}
+.car-bg-container h1 {
+  color: white;
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 250px 0 0 75px;
+}
+.car-details-container {
+  margin: 75px;
+  text-align: center;
+}
+.car-details-container h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: goldenrod;
+  margin-bottom: 25px;
+}
+.range-rover-text h1 {
+  color: #444;
+}
+.bmw-text h1 {
+  color: crimson;
+}
+.car-details-container p {
+  text-align: justify;
+  font-size: 1.3rem;
+}
+.car-details-container a {
+  text-decoration: none;
+  color: white;
+  background-color: goldenrod;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 8px 25px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-top: 25px;
+}
+.car-details-container a:hover {
+  background-color: rgb(187, 138, 15);
+}
+
+.car-details-container a:active {
+  outline: 3px solid rgba(228, 167, 14, 0.6);
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 25px;
+}

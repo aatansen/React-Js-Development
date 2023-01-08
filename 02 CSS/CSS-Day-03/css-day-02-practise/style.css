@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(220, 20, 60);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+ul{
+    background-color: rgba(0, 0, 0,0.1);
+    width: 500px;
+    margin: 100px auto;
+    padding: 50px;
+    border-radius: 10px;
+    
+}
+ul li{
+    color:white;
+    list-style: none;
+    background-color: rgba(0, 0, 0,0.1);
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+ul li:hover{
+    background-color: rgba(0, 0, 0,0.3);
+    cursor: pointer;
+}

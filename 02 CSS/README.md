@@ -208,5 +208,38 @@ a:link{
     
 }
 ```
+</details>
 
+<details>
+<summary>CSS-Day-03</summary>
+images:
+
+```
+*When an image is style with width it will auto resize height
+
+```
+
+view port height:
+
+```css
+.car-bg-container{
+    background-image: url(https://images.unsplash.com/photo-1552176625-e47ff529b595?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80);
+    width: 100%;
+    height: 100vh; /* <--- */
+}
+```
+
+parallax effect:
+
+```css
+.car-bg-container{
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: contain; */
+    background-attachment: fixed;  /*<---*/
+}
+```
 </details>
