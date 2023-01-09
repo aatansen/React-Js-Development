@@ -1,6 +1,19 @@
 <details>
 <summary>CSS-Day-01</summary>
 
+### Topic:
+01.	Introduction to CSS and Syntax Explanations
+02.	Different Ways to Add Styles
+03.	Comments
+04.	Colors (Named Colors, RGB, HEX, HSL, RGBA and HSLA)
+05.	Background Colors
+06.	Margins
+07.	Padding
+08.	Units
+09.	Height and Width
+10.	Borders
+11.	CSS Box Model
+
 CSS(**Cascading Style Sheets**) Introduction:
 
 inline css:
@@ -132,6 +145,17 @@ CSS box Model from Inspect
 <details>
 <summary>CSS-Day-02</summary>
 
+### Topic:
+12.	Outline
+13.	Typography (Color, Background Color, Alignment, Decoration, Transformation and Spacing)
+14.	Fonts (Font Family, Font Style, Font Size and Google Fonts)
+15.	Font Awesome Icons
+16.	Links
+17.	Buttons
+18.	Homework - 04: Create 10 Awesome Buttons and A List
+19.	Lists
+20.	Display and Visibility 
+
 Outline:
 
 it is used outside design of the border:
@@ -212,6 +236,14 @@ a:link{
 
 <details>
 <summary>CSS-Day-03</summary>
+
+### Topic:
+21.	Max-Width, Min-Width, Max-Height and Min-Height
+22.	Backgrounds (Image, Repeat, Size, Attachment and Position)
+23.	Homework - 05: Create A Parallax Website
+24.	Navigation Bar
+25.	Homework - 06: Create 5 Navigation Bars
+
 images:
 
 ```
@@ -246,6 +278,14 @@ parallax effect:
 
 <details>
 <summary>CSS-Day-04</summary>
+
+### Topic:
+26.	Shadow Effects
+27.	Text Effects
+28.	Homework - 07: Create 3 Cards
+29.	Tables
+30.	Homework - 08: Create 2 Tables
+
 Shadows:
 
 ```css
