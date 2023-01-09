@@ -1,6 +1,16 @@
 <details>
 <summary>HTML-Day-01</summary>
 
+### Topic:
+01.	Introduction to Web Development and Environment Setup
+02.	Introduction to HTML
+03.	Headings
+04.	Paragraphs, Horizontal Rules, Line Breaks and Preformatted Texts
+05.	Text Formatting: Bold, Emphasized, Italic, Small, Strong, Subscripted, Superscripted, Inserted, Underlined and Deleted
+06.	Abbreviations, Address, Blockquotes, Citations and Inline Quotations
+07.	Comments
+08.	Hyperlinks: Reference and Target Attributes
+
 html simple template:
 
 ```html
@@ -154,6 +164,16 @@ Blockquote,Inline quote(q),cite(tag & attribute) tag and comment,a(href) tag :
 
 <details>
 <summary>HTML-Day-02</summary>
+
+### Topic:
+09.	Create Bookmarks Using Links
+10.	Images: Src, Alt, Height and Width Attributes
+11.	Combined Images and Links
+12.	Inside Head Element
+13.	Homework - 01: Create A Simple Blog Page Using Only HTML
+14.	Lists
+15.	Tables
+16.	Homework - 02: Create A Simple Table For Your Football Team
 
 Bookmark (id,href):
 
@@ -390,6 +410,17 @@ Nested-Table:
 
 <details>
 <summary>HTML-Day-03</summary>
+
+### Topic:
+17.	Favicons
+18.	Audio
+19.	Video
+20.	Iframes
+21.	Forms
+22.	Entities
+23.	Semantic Elements
+24.	Homework - 03: Create A Semantic Website For Your Online News Portal
+
 favicon (can be used before or after title):
 
 Shortcut--> link:favicon
