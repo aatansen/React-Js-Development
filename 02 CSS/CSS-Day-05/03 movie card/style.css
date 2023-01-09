@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;600&display=swap');
+
+body{
+    font-family: 'Exo', sans-serif;
+    background-color: aliceblue;
+    color: #444;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.card-container{
+    width: 400px;
+    background-color: white;
+    margin: 100px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 5px 5px 25px 10px rgba(0, 0, 0, 0.1);
+}
+.card-image{
+    width: 400px;
+    height: 500px;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.card-image img{
+    width: 400px;
+    cursor: pointer;
+}
+.card-image img:hover{
+    transform: scale(1.1);
+    filter: grayscale(1);
+}
+#imdb-rating{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,174,214);
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 0 0 10px 0;
+}
+#rotten-rating{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: orangered;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 0 0 0 10px;
+}
+.card-details h1{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+.card-details p{
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.card-details p:nth-child(2){
+    color: orangered;
+}
+.card-details a{
+    text-decoration: none;
+    background-color: rgba(0,174,214,0.2);
+    color: rgb(0,174,214);
+    border-radius: 3px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    display: block;
+    text-align: center;
+    padding: 3px 0;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.card-details a:hover{
+    background-color: rgb(0,174,214);
+    color: white;
+    letter-spacing: 8px;
+}
+.card-details a:active{
+    background-color: rgba(0,174,214,0.8);
+}
+.fa-youtube{
+    margin-right: 10px;
+}

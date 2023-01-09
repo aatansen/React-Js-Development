@@ -344,3 +344,151 @@ git commit -m "update commit"
 git push
 ```
 </details>
+
+<details>
+<summary>CSS-Day-05</summary>
+
+### Topic:
+31.	Border Images
+32.	Position and Z-Index
+33.	Overflow
+34.	Homework - 08: Create 2 Movie Cards
+
+Position:
+
+```css
+1. Static - It is a default position of anything
+2. Relative - position stay as it is
+3. Absolute - it change its position
+```
+
+position change using position:
+
+```css
+.relative{
+    width: 500px;
+    height: 500px;
+    background-color: crimson;
+    position: relative;
+}
+.absolute{
+    width: 100px;
+    height: 100px;
+    background-color: mediumturquoise;
+    position: absolute;
+    top: 50px;
+}
+```
+
+Z index:
+
+```css
+/*it is used to make sure that the absolute element is on top of the relative element */
+.relative{
+    width: 500px;
+    height: 500px;
+    background-color: crimson;
+    position: relative;
+}
+.absolute{
+    width: 100px;
+    height: 100px;
+    background-color: mediumturquoise;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 1; 
+}
+.absolute-2{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+}
+```
+
+Sticky Position:
+
+```css
+.logo h1{
+    position: sticky;
+    top: 0;
+}
+```
+
+Box shadow:
+
+```css
+/* here box shadow contain {x} {y} {blur} {sprading area} {colour} */
+.box-1{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: rgb(0,174,214);
+    margin: 100px auto;
+    box-shadow: 5px 5px 20px 50px rgba(0,0,0,0.5);
+}
+```
+
+neumorphism shadow inset:
+
+```css
+/*Shadow will look like inside*/
+.box-2{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: rgb(0,174,214);
+    margin: auto;
+    box-shadow: inset 5px 5px 20px rgb(2, 143, 175) , inset -5px -5px 20px rgb(9, 204, 248);
+}
+```
+
+Zoom effect and Color change on hover:
+
+```css
+.card-image img:hover{
+    transform: scale(1.1);
+    filter: grayscale(1);
+}
+```
+
+Transition:
+
+```css
+/* Transition effect declared in main class */
+.card-details a{
+    text-decoration: none;
+    background-color: rgba(0,174,214,0.2);
+    color: rgb(0,174,214);
+    border-radius: 3px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    display: block;
+    text-align: center;
+    padding: 3px 0;
+    margin-bottom: 30px;
+    transition: 0.3s;  /* <-------- */
+}
+.card-details a:hover{
+    background-color: rgb(0,174,214);
+    color: white;
+    letter-spacing: 8px;
+}
+.card-details a:active{
+    background-color: rgba(0,174,214,0.8);
+}
+```
+
+Font Awesome:
+
+```bash
+#font-awesome cdn:
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
+```
+
+</details>

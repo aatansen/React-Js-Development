@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(0, 174, 214);
+}
+.box-1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 100px auto;
+  box-shadow: 5px 5px 20px 10px rgba(0, 0, 0, 0.1);
+}
+.box-2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgb(0, 174, 214);
+  margin: auto;
+  box-shadow: inset 5px 5px 20px rgb(2, 143, 175), inset -5px -5px 20px rgb(9, 204, 248);
+  margin-bottom: 50px;
+}
+.box-3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  background-color: rgb(0, 174, 214);
+  margin: auto;
+  box-shadow: 5px 5px 20px rgb(2, 143, 175), -5px -5px 20px rgb(9, 204, 248);
+}
