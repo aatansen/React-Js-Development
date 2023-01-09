@@ -243,3 +243,64 @@ parallax effect:
 }
 ```
 </details>
+
+<details>
+<summary>CSS-Day-04</summary>
+Shadows:
+
+```css
+/* Mostly used for box */
+/* box-shadow: x y blur colour; */
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    margin: 100px auto;
+    border-radius: 10px;
+}
+```
+
+neumorphism shadow:
+
+```css
+.neo-box{
+    width: 300px;
+    height: 300px;
+    background-color: #e2ecee;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #e2ecee , -5px -5px 15px #e2ecee; /*note*/
+}
+/*first one will be darker , 2nd one will be lighter*/
+```
+
+Targeting nth child:
+
+```css
+tr{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+tr:nth-child(even){
+    background-color: whitesmoke;
+}
+```
+
+github:
+
+```bash
+#first time
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https....../name.git
+git push -u origin main
+
+#update time
+git add .
+git commit -m "update commit"
+git push
+```
+</details>
