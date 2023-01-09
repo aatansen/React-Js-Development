@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: aliceblue;
+  color: #444;
+  font-size: 1.3rem;
+}
+table{
+    background-color: white;
+    margin: 100px auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.1);
+    border-collapse: collapse;
+}
+tr{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+tr:nth-child(even){
+    background-color: whitesmoke;
+}
+tbody tr:last-child{
+    border: none;
+}
+tbody tr td:nth-child(4),td:nth-child(5){
+    text-align: right;
+}
+tbody tr td:nth-child(2),td:nth-child(3){
+    text-align: center;
+}
+tbody tr td:first-child{
+    color: royalblue;
+}
+tbody tr td:last-child{
+    display: inline-block;
+    background-color: lightseagreen;
+    padding: 3px 5px;
+    margin: 15px auto;
+    border-radius: 3px;
+    color: white;
+}
+
+th,td{
+    letter-spacing: 2px;
+    padding: 15px;
+}
+th{
+    text-transform: uppercase;
+}
+.under-shipment td:last-child{
+    background-color: orangered;
+}
+.not-received td:last-child{
+    background-color: crimson;
+}
+.ps1 td:nth-child(2){
+    display: inline-block;
+    background-color: yellowgreen;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
