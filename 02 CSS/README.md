@@ -1274,5 +1274,342 @@ body {
     margin-top: 7px;
 }
 ```
+</details>
 
+<details>
+<summary>CSS-Day-07</summary>
+
+### Topic:
+40.	Opacity
+41.	Dropdowns
+42.	Box Sizing
+43.	Gradients
+44.	Transforms
+45.	Homework - 10: Create 1 Navigation Bar Including Dropdowns
+46.	Homework - 11: Create 1 Product Card Using Gradients
+
+box size problem:
+
+```css
+.box-1{
+    width:300px;
+    height:400px;
+    background-color:crimson;
+    /* padding: 20px; */
+    /* border: 10px solid black; */
+}
+.box-2{
+    width:300px;
+    height:400px;
+    background-color:crimson;
+}
+```
+
+solution is to use box sizing property
+
+```css
+.box-1{
+    width:300px;
+    height:400px;
+    background-color:crimson;
+    /* padding: 20px; */
+    border: 10px solid black;
+    /*box sizing default is content-box */
+    box-sizing: border-box;
+}
+.box-2{
+    width:300px;
+    height:400px;
+    background-color:crimson;
+}
+```
+
+Universal selector :
+
+```css
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+```
+
+Column:
+
+```css
+p{
+    font-family: sans-serif;
+    font: 1.3em;
+    line-height: 1.3;
+    text-align: justify;
+    padding: 25px;
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 1px solid rgba(0 0 0 /0.3);
+}
+```
+
+Filter:
+
+```css
+.image-container{
+    width:350px;
+    height:500px;
+    overflow: hidden;
+    margin: 100px auto;
+    filter: drop-shadow(5px 5px 10px black);
+}
+.image-container img{
+    width:100%;
+    /* filter: blur(5px); */
+    /* filter: brightness(3); */
+    /* filter: contrast(2); */
+    /* filter: grayscale(0.5); */
+    /* filter: hue-rotate(30deg); */
+    /* filter: invert(2); */
+    /* filter: opacity(0.3); */
+    /* filter: saturate(2); */
+    filter: sepia(3);
+
+}
+```
+
+Middle position :
+
+```bash
+div {
+    width: 400px;
+    height: 400px;
+    background-color: crimson;
+    /* middle position  */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+```
+
+Transform :
+
+```bash
+div {
+    width: 400px;
+    height: 400px;
+    background-color: crimson;
+    /* middle position  */
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    /* transform: rotate(50deg); */
+    /* transform: scale(1.5); */
+    /* transform: scale(1.5); */
+    /* transform: skew(30deg); */
+    /* transform: translateX(100px); */
+    /* transform: translateY(100px); */
+    transform: translate(100px,100px);
+}
+```
+
+Gradient:
+
+```bash
+# Linear Gradient (min 2 color)
+# Radial gradient
+```
+
+Linear Gradient different ways :
+
+```css
+/* background-image: linear-gradient(deeppink, purple);
+        background-image: linear-gradient(to left , deeppink, purple);
+    background-image: linear-gradient(to right , deeppink, purple);
+    background-image: linear-gradient(to top , deeppink, purple);
+    background-image: linear-gradient(to bottom , deeppink, purple); 
+        background-image: linear-gradient(to left top , deeppink, purple);*/
+    background-image: linear-gradient(35deg , deeppink, purple);
+```
+
+Linear Gradient different ways :
+
+```css
+/* background-image: radial-gradient(closest-side at 200px 100px, tomato , crimson); */
+    background-image: radial-gradient(farthest-corner at 0px 400px, tomato , crimson);
+```
+
+Gradient:
+
+```html
+
+<body>
+    <div></div>
+</body>
+```
+
+```css
+div {
+    width: 400px;
+    height: 400px;
+    /* background-color: deeppink; */
+    border: 1px solid lightgray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-image: linear-gradient(deeppink, purple);
+    background-image: linear-gradient(to left , deeppink, purple);
+    background-image: linear-gradient(to right , deeppink, purple);
+    background-image: linear-gradient(to top , deeppink, purple);
+    background-image: linear-gradient(to bottom , deeppink, purple); 
+    background-image: linear-gradient(to left top , deeppink, purple);
+    background-image: linear-gradient(35deg, deeppink, purple);
+    background-image: linear-gradient(35deg, deeppink 60%, purple 80%);
+    background-image: repeating-linear-gradient(35deg, deeppink 60%, purple 80%);*/
+    
+    /* background-image: radial-gradient(closest-side at 200px 100px, tomato , crimson); 
+    background-image: radial-gradient(farthest-corner at 0px 400px, tomato , crimson);*/
+}
+```
+
+Simple animation (using transition):
+
+```html
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+```
+
+```css
+.parent{
+    width: 100%;
+    height: 75vh;
+    background-color: crimson;
+}
+.child{
+    width: 50px;
+    height: 50px;
+    background-color: mediumaquamarine;
+    transition: transform 0.5s linear;
+}
+.parent:hover .child{
+    transform: translateX(800px);
+}
+```
+
+Animation;
+
+```css
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+```
+
+Keyframe Animation :
+
+```html
+<body>
+    <div class="parent">
+        <div class="child"></div>
+    </div>
+</body>
+```
+
+```css
+.parent{
+    width: 100%;
+    height: 500px;
+    background-color: crimson;
+    position: relative;
+}
+.child{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: mediumaquamarine;
+    animation: kick 5s linear  0s infinite;
+    position: absolute;
+    bottom: 0;
+}
+/* @keyframes kick {
+    from {
+        transform: translate(0,0);
+    }
+    to {
+        transform: translate(500px,0);
+    }
+} */
+/*----------also it can be written like this--------------*/
+@keyframes kick {
+    0% {
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(500px,0);
+    }
+    75% {
+        transform: translate(500px,-400px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+```
+
+Typewriter animation using animation steps() forwards
+
+```html
+<body>
+    <h1>Typewriter animation go.....!</h1>
+</body>
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    background-color: antiquewhite;
+}
+h1 {
+    color: #444;
+    position: relative;
+    display: inline-block;
+    margin-top: 300px;
+}
+h1::before,
+h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+h1::before {
+    background-color: antiquewhite;
+    animation: typewriter 6s steps(29) forwards 1s;
+}
+h1::after{
+    width: 0.1em;
+    background-color: #444;
+    animation: typewriter 6s steps(29) forwards 1s,
+    blink 0.75s steps(29) forwards 1s infinite;
+}
+@keyframes typewriter {
+    to {
+    left: 100%;
+    }
+}
+@keyframes blink {
+    to{
+        background-color: transparent;
+    }
+}
+```
 </details>

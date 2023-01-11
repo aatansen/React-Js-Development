@@ -1,0 +1,19 @@
+.image-container{
+    width:350px;
+    height:500px;
+    overflow: hidden;
+    margin: 100px auto;
+    filter: drop-shadow(5px 5px 10px black);
+}
+.image-container img{
+    width:100%;
+    /* filter: blur(5px); */
+    /* filter: brightness(3); */
+    /* filter: contrast(2); */
+    /* filter: grayscale(0.5); */
+    /* filter: hue-rotate(30deg); */
+    /* filter: invert(2); */
+    /* filter: opacity(0.3); */
+    /* filter: saturate(2); */
+    filter: sepia(3);
+}

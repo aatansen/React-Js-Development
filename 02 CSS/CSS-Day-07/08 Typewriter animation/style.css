@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  background-color: antiquewhite;
+}
+h1 {
+  color: #444;
+  position: relative;
+  display: inline-block;
+  margin-top: 300px;
+}
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+h1::before {
+  background-color: antiquewhite;
+  animation: typewriter 6s steps(29) forwards 1s;
+}
+h1::after{
+    width: 0.1em;
+    background-color: #444;
+    animation: typewriter 6s steps(29) forwards 1s,
+    blink 0.75s steps(29) forwards 1s infinite;
+}
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+    to{
+        background-color: transparent;
+    }
+}

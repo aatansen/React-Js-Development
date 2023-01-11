@@ -1,0 +1,14 @@
+.parent{
+    width: 100%;
+    height: 75vh;
+    background-color: crimson;
+}
+.child{
+    width: 50px;
+    height: 50px;
+    background-color: mediumaquamarine;
+    transition: transform 0.5s linear;
+}
+.parent:hover .child{
+    transform: translateX(800px);
+}
