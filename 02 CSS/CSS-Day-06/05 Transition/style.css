@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 50vh;
+    background-color: crimson;
+    padding: 50px;
+    
+}
+.container:hover .box{
+transform: translateX(500px);
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: mediumturquoise;
+    padding: 10px;
+    /* transition: property-name duration timing-function delay; */
+    transition: transform 1s cubic-bezier(0,1.4,.54,-0.54) 2s;
+    /* ease - slow then fast then slow */
+    /* ease-in - slow then fast */
+    /* ease-out - fast then slow */
+    /* linear same speed */
+    /* cubic-bezier(n,n,n,n) - custom speed  */
+
+
+}

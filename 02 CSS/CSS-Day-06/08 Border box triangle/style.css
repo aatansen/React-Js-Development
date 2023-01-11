@@ -1,0 +1,10 @@
+.box{
+    width: 0px;
+    height: 0px;
+    /* background-color: crimson; */
+    /* border: 50px solid black; */
+    border-top: 300px solid black;
+    /* border-bottom: 300px solid crimson; */
+    border-left: 300px solid white;
+    border-right: 300px solid white;
+}

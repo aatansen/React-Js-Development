@@ -1,0 +1,16 @@
+/* Descendant Combinator  */
+/* .container p {
+  color: orange;
+} */
+/* child combinator  */
+/* .container > p {
+  color: crimson;
+} */
+/* General sibling combinator*/
+/* h2 ~ p{
+    color: blue;
+} */
+/* Adjacent sibling combinator */
+h2 + p {
+  color: green;
+}

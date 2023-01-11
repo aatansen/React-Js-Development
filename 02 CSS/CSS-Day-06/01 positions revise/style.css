@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: crimson;
+    position: sticky;
+    top: 0;
+    position: relative;
+}
+header h1{
+    color: white;
+    text-align: center;
+}
+button{
+    font-size: 2rem;
+    padding: 10px;
+    background-color: aqua;
+    position: fixed;
+    bottom:100px;
+    right:100px;
+}
+.para{
+    color: white;
+    border: 2px solid black;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
