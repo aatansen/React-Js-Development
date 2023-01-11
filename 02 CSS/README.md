@@ -1287,6 +1287,23 @@ body {
 44.	Transforms
 45.	Homework - 10: Create 1 Navigation Bar Including Dropdowns
 46.	Homework - 11: Create 1 Product Card Using Gradients
+47. Attribute Selectors
+48. Forms
+49. Homework - 12: Create 1 Form
+50. Tooltip
+51. Homework - 13: Create 1 Tooltip
+52. Styling Images
+53. Image Reflection
+54. Object Property
+55. Masking
+56. Multiple Columns
+57. Homework - 14: Create 2 Image Gallery
+58. Specificity
+59. !important
+60. CSS Variables
+61. Math Functions
+62. Animations
+63. Homework - 15: Create 1 Animation
 
 box size problem:
 
