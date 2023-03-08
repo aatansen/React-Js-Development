@@ -187,3 +187,75 @@ flex : 1 0 250px;
 ```
 
 </details>
+
+<details>
+<summary>Flexbox-Day-02</summary>
+
+### Topic:
+- Photography Website (flexbox, grid,positions,root css etc)
+
+Iconscount CDN:
+
+```css
+https://unicons.iconscout.com/release/v4.0.0/css/line.css
+```
+
+Font (Poppins)
+
+```css
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+```
+
+Custom variable:
+
+most useful to change whole website color,style etc
+
+targeting root css:
+
+```css
+:root{
+    --name : value;
+}
+```
+
+example:
+
+```css
+:root{
+    --my-color:red;
+    --my-border-radius:10px;
+}
+.test{
+    background-color: var(--my-color);
+    width: 100px;
+    height: 100px;
+    border-radius: var(--my-border-radius);
+}
+```
+
+flex vs grid :
+
+```bash
+centering:
+#in flex we need to have x, y direction which is justify-content(x) & align-items(y)
+#but in grid we have only one property place-items(x,y both)
+```
+
+```css
+nav{
+    width: 100vh;
+    height: 5rem;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    
+    /* same thing but in two line */
+    display: grid;
+    place-items: center;
+}
+```
+
+</details>
