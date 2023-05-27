@@ -2,19 +2,20 @@
 <summary>CSS-Day-01</summary>
 
 ### Topic:
-01.	Introduction to CSS and Syntax Explanations
-02.	Different Ways to Add Styles
-03.	Comments
-04.	Colors (Named Colors, RGB, HEX, HSL, RGBA and HSLA)
-05.	Background Colors
-06.	Margins
-07.	Padding
-08.	Units
-09.	Height and Width
-10.	Borders
-11.	CSS Box Model
 
-CSS(**Cascading Style Sheets**) Introduction:
+- Introduction to CSS and Syntax Explanations
+- Different Ways to Add Styles
+- Comments
+- Colors (Named Colors, RGB, HEX, HSL, RGBA and HSLA)
+- Background Colors
+- Margins
+- Padding
+- Units
+- Height and Width
+- Borders
+- CSS Box Model
+
+### CSS(**Cascading Style Sheets**) Introduction:
 
 inline css:
 
@@ -25,7 +26,7 @@ inline css:
 </body>
 ```
 
-internal css:
+### internal css:
 
 ```html
 <!DOCTYPE html>
@@ -53,7 +54,7 @@ internal css:
 </html>
 ```
 
-external css:
+### external css:
 
 ```html
 <!DOCTYPE html>
@@ -75,9 +76,9 @@ external css:
 </html>
 ```
 
-color scheme:
+### color scheme:
 
-```
+```html
 rgb(red,green,blue)
 rgba(red,green,blue,alpha)
 
@@ -88,7 +89,7 @@ Double hex can be used once:
 hls(hue,lightness,saturation)
 ```
 
-coloring tag:
+### coloring tag:
 
 ```css
 h2{
@@ -97,7 +98,7 @@ h2{
 }
 ```
 
-coloring id:
+### coloring id:
 
 ```css
 #author-date{
@@ -106,7 +107,7 @@ coloring id:
 }
 ```
 
-coloring class:
+### coloring class:
 
 ```css
 .color-paragraph {
@@ -114,7 +115,7 @@ coloring class:
 }
 ```
 
-styling specific text from a big paragraph <span> is used:
+### styling specific text from a big paragraph <span> is used:
 
 decending selector:
 
@@ -131,32 +132,32 @@ p span {
 </p>
 ```
 
-Margin in css:
+### Margin in css:
 
 ```css
+/*CSS box Model from Inspect*/
 margin: 100px; /*four sides*/ 
 margin: 100px 10px; /*top-bottom left-right; */
 margin: 200px 100px 300px 50px; /*top-right-bottom-left  */
 ```
-
-CSS box Model from Inspect
 </details>
 
 <details>
 <summary>CSS-Day-02</summary>
 
 ### Topic:
-12.	Outline
-13.	Typography (Color, Background Color, Alignment, Decoration, Transformation and Spacing)
-14.	Fonts (Font Family, Font Style, Font Size and Google Fonts)
-15.	Font Awesome Icons
-16.	Links
-17.	Buttons
-18.	Homework - 04: Create 10 Awesome Buttons and A List
-19.	Lists
-20.	Display and Visibility 
 
-Outline:
+- Outline
+- Typography (Color, Background Color, Alignment, Decoration, Transformation and Spacing)
+- Fonts (Font Family, Font Style, Font Size and Google Fonts)
+- Font Awesome Icons
+- Links
+- Buttons
+- Homework - 04: Create 10 Awesome Buttons and A List
+- Lists
+- Display and Visibility
+
+### Outline:
 
 it is used outside design of the border:
 
@@ -173,7 +174,7 @@ it is used outside design of the border:
 }
 ```
 
-Default font size:
+### Default font size:
 
 ```css
 .wrapper p{
@@ -182,50 +183,43 @@ Default font size:
 /* 1rem == 16px */
 ```
 
-Pixel vs rem vs em
+### Pixel vs rem vs em
 
-```
-16px = 1rem
-but for em it works different relatively to that selected tag:
+- 16px = 1rem
+- but for em it works different relatively to that selected tag:
 example 
 for p , 1em = 16px
 for h1 it is different.
-```
 
-Block vs Inline element:
+### Block vs Inline element:
 
-```
-A block-level element always takes up the full width available.
+- A block-level element always takes up the full width available.
 example : <p>
-
-An inline element only takes up as much width as necessary.
+- An inline element only takes up as much width as necessary.
 example : <a>
-***margin works only left-right***
-```
+- Margin works only left-right
 
-inline behave as block element—>inline-block element:
+### inline behave as block element—>inline-block element:
 
 ```css
 display: inline-block
 ```
 
-Importing google font:
+### Importing google font:
 
 ```css
 /* select font and copy import code */
 <style> @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); </style>
 ```
 
-Link State:
+### Link State:
 
-```
-1. Link
-2. Visited
-3. Active
-4. Hover
-```
+- Link
+- Visited
+- Active
+- Hover
 
-pseudo class:
+### pseudo class:
 
 ```css
 a:link{
@@ -238,20 +232,18 @@ a:link{
 <summary>CSS-Day-03</summary>
 
 ### Topic:
-21.	Max-Width, Min-Width, Max-Height and Min-Height
-22.	Backgrounds (Image, Repeat, Size, Attachment and Position)
-23.	Homework - 05: Create A Parallax Website
-24.	Navigation Bar
-25.	Homework - 06: Create 5 Navigation Bars
 
-images:
+- Max-Width, Min-Width, Max-Height and Min-Height
+- Backgrounds (Image, Repeat, Size, Attachment and Position)
+- Homework - 05: Create A Parallax Website
+- Navigation Bar
+- Homework - 06: Create 5 Navigation Bars
 
-```
-*When an image is style with width it will auto resize height
+### images:
 
-```
+- When an image is style with width it will auto resize height
 
-view port height:
+### view port height:
 
 ```css
 .car-bg-container{
@@ -261,9 +253,10 @@ view port height:
 }
 ```
 
-parallax effect:
+### parallax effect:
 
 ```css
+/*in parallax effect background image is fixed*/
 .car-bg-container{
     width: 100%;
     height: 70vh;
@@ -280,17 +273,19 @@ parallax effect:
 <summary>CSS-Day-04</summary>
 
 ### Topic:
-26.	Shadow Effects
-27.	Text Effects
-28.	Homework - 07: Create 3 Cards
-29.	Tables
-30.	Homework - 08: Create 2 Tables
 
-Shadows:
+- Shadow Effects
+- Text Effects
+- Homework - 07: Create 3 Cards
+- Tables
+- Homework - 08: Create 2 Tables
+
+### Shadows:
+
+- Mostly used for box
+- `box-shadow: x y blur colour;`
 
 ```css
-/* Mostly used for box */
-/* box-shadow: x y blur colour; */
 .box{
     width: 300px;
     height: 300px;
@@ -301,7 +296,7 @@ Shadows:
 }
 ```
 
-neumorphism shadow:
+### neumorphism shadow:
 
 ```css
 .neo-box{
@@ -315,7 +310,7 @@ neumorphism shadow:
 /*first one will be darker , 2nd one will be lighter*/
 ```
 
-Targeting nth child:
+### Targeting nth child:
 
 ```css
 tr{
@@ -327,7 +322,7 @@ tr:nth-child(even){
 }
 ```
 
-github:
+### github:
 
 ```bash
 #first time
@@ -349,20 +344,19 @@ git push
 <summary>CSS-Day-05</summary>
 
 ### Topic:
-31.	Border Images
-32.	Position and Z-Index
-33.	Overflow
-34.	Homework - 08: Create 2 Movie Cards
+
+- Border Images
+- Position and Z-Index
+- Overflow
+- Homework - 08: Create 2 Movie Cards
 
 Position:
 
-```css
-1. Static - It is a default position of anything
-2. Relative - position stay as it is
-3. Absolute - it change its position
-```
+- Static - It is a default position of anything
+- Relative - position stay as it is
+- Absolute - it changes its position
 
-position change using position:
+### position change using position:
 
 ```css
 .relative{
@@ -380,7 +374,7 @@ position change using position:
 }
 ```
 
-Z index:
+### Z index:
 
 ```css
 /*it is used to make sure that the absolute element is on top of the relative element */
@@ -409,7 +403,7 @@ Z index:
 }
 ```
 
-Sticky Position:
+### Sticky Position:
 
 ```css
 .logo h1{
@@ -418,7 +412,7 @@ Sticky Position:
 }
 ```
 
-Box shadow:
+### Box shadow:
 
 ```css
 /* here box shadow contain {x} {y} {blur} {sprading area} {colour} */
@@ -432,7 +426,7 @@ Box shadow:
 }
 ```
 
-neumorphism shadow inset:
+### neumorphism shadow inset:
 
 ```css
 /*Shadow will look like inside*/
@@ -446,7 +440,7 @@ neumorphism shadow inset:
 }
 ```
 
-Zoom effect and Color change on hover:
+### Zoom effect and Color change on hover:
 
 ```css
 .card-image img:hover{
@@ -455,7 +449,7 @@ Zoom effect and Color change on hover:
 }
 ```
 
-Transition:
+### Transition:
 
 ```css
 /* Transition effect declared in main class */
@@ -484,7 +478,7 @@ Transition:
 }
 ```
 
-Font Awesome:
+### Font Awesome:
 
 ```bash
 #font-awesome cdn:
@@ -497,13 +491,14 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css
 <summary>CSS-Day-06</summary>
 
 ### Topic:
-35.	Combinators
-36.	Pseudo-Classes
-37.	Pseudo-Elements
-38.	Transitions
-39.	Homework - 09: Create 2 Navigation Bars Using Line Hover Effects
 
-Positions revise:
+- Combinators
+- Pseudo-Classes
+- Pseudo-Elements
+- Transitions
+- Homework - 09: Create 2 Navigation Bars Using Line Hover Effects
+
+### Positions revise:
 
 ```css
 /*Sticky:*/
@@ -528,7 +523,7 @@ button{
 }
 ```
 
-Combinators:
+### Combinators:
 
 ```bash
 #Descendant Combinator (.classname p) select every p
@@ -537,7 +532,7 @@ Combinators:
 #Adjacent sibling combinator(.classname + p) select exactly p child **if other tag come first then won't work
 ```
 
-Descendant Combinator:
+### Descendant Combinator:
 
 ```html
 <body>
@@ -570,16 +565,16 @@ color: orange;
 }
 ```
 
-Child combinator targeting Direct child only (>):
+### Child combinator targeting Direct child only (>):
 
 ```css
 /* child combinator  */
 .container > p {
-    color: crimson;
+  color: crimson;
 }
 ```
 
-General sibling combinator:
+### General sibling combinator:
 
 ```css
 /* General sibling combinator*/
@@ -588,29 +583,25 @@ h2 ~ p{
 }
 ```
 
-Adjacent sibling combinator:
+### Adjacent sibling combinator:
 
 ```css
 h2 + p {
-    color: green;
+  color: green;
 }
 ```
 
-Link Psuedo Class:
+### Link Psuedo Class:
 
-```bash
-1. Link
-2. Visited
-3. Hover
-4. Active
-```
+- Link
+- Visited
+- Hover
+- Active
 
-Transition:
+### Transition:
 
-```bash
-#Transition must be define in main psuedo class element
-#but if it is define in hover then only hover will get the effect
-```
+- Transition must be define in main psuedo class element
+- but if it is define in hover then only hover will get the effect
 
 ```css
 .container a:link ,a:visited{
@@ -632,29 +623,27 @@ Transition:
 }
 ```
 
-Input psuedo class:
+### Input psuedo class:
 
 ```css
 input {
-    font-family: sans-serif;
-    font-size: 2rem;
-    background-color: rgba(0, 174, 214, 0.1);
-    outline: none;
-    border: 3px solid rgb(0, 174, 214);
-    padding: 10px;
-    border-radius: 5px;
-    transition: 0.5s;
+  font-family: sans-serif;
+  font-size: 2rem;
+  background-color: rgba(0, 174, 214, 0.1);
+  outline: none;
+  border: 3px solid rgb(0, 174, 214);
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.5s;
 }
 input:focus{
 border-color: tomato;
 }
 ```
 
-nth-child:
+### nth-child:
 
-```bash
-#every child is counted unter a parent
-```
+- every child is counted unter a parent
 
 ```html
 <div class="container">
@@ -667,7 +656,7 @@ nth-child:
     </div>
 ```
 
-Here Naruto will be effected by nth-child(3) though it is 2nd p:
+### Here Naruto will be effected by nth-child(3) though it is 2nd p:
 
 ```css
 .container p:nth-child(3){
@@ -678,7 +667,7 @@ Here Naruto will be effected by nth-child(3) though it is 2nd p:
 }
 ```
 
-nth-child(even):
+### nth-child(even):
 
 ```html
 <body>
@@ -699,7 +688,7 @@ nth-child(even):
 }
 ```
 
-nth-child(odd):
+### nth-child(odd):
 
 ```html
 <body>
@@ -720,7 +709,7 @@ nth-child(odd):
 }
 ```
 
-nth-child(2n):
+### nth-child(2n):
 
 ```html
 <body>
@@ -741,18 +730,15 @@ nth-child(2n):
 }
 ```
 
-Transition;
+### Transition:
 
-```bash
-#transition: property-name duration timing-function delay;
-#ease - slow then fast then slow
-#ease-in - slow then fast
-#ease-out - fast then slow 
-#linear same speed 
-#cubic-bezier(n,n,n,n) - custom speed  
-
-#default transition is ease
-```
+- transition: property-name duration timing-function delay;
+- ease - slow then fast then slow
+- ease-in - slow then fast
+- ease-out - fast then slow
+- linear same speed
+- cubic-bezier(n,n,n,n) - custom speed
+- default transition is ease
 
 ```html
 <body>
@@ -793,7 +779,7 @@ transform: translateX(500px);
 }
 ```
 
-Psuedo element (::)
+### Psuedo element (::)
 
 understanding:
 
@@ -820,7 +806,7 @@ understanding:
 </html>
 ```
 
-psuedo element transform:
+### psuedo element transform:
 
 ```html
 <nav>
@@ -878,7 +864,7 @@ ul a:hover::after{
 }
 ```
 
-in transform we can use “all” :
+### in transform we can use “all” :
 
 ```css
 ul a::after{
@@ -902,7 +888,7 @@ ul a:hover::after{
 }
 ```
 
-Whenever we need element for animation content property must there :
+### Whenever we need element for animation content property must there :
 
 ```css
 ul a::after{
@@ -910,7 +896,7 @@ ul a::after{
 }
 ```
 
-Here when hover “after” element will be effected:
+### Here when hover “after” element will be effected:
 
 ```css
 ul a::after{
@@ -929,14 +915,12 @@ ul a:hover::after{
 }
 ```
 
-Special note on transition:
+### Special note on transition:
 
-```bash
-#Don't write transition property on psuedo class
-#It should be written in psuedo element and main element
-```
+- Don't write transition property on pseudo class
+- It should be written in pseudo element and main element
 
-psuedo element navbar animation:
+### psuedo element navbar animation:
 
 ```html
 <body>
@@ -996,7 +980,7 @@ ul a:hover::after{
 }
 ```
 
-Triangle design with border
+### Triangle design with border
 
 ```css
 .box{
@@ -1011,7 +995,7 @@ Triangle design with border
 }
 ```
 
-Triangle design with border (right indicate arrow):
+### Triangle design with border (right indicate arrow):
 
 ```css
 /*if arrow indicate rightside , leftside will have solor other two (top,bottom) transparent*/
@@ -1026,13 +1010,13 @@ Triangle design with border (right indicate arrow):
 }
 ```
 
-Note on coordinate system:
+### Note on coordinate system:
 
 ```bash
 #We use svg coordinate system
 ```
 
-Tooltip;
+### Tooltip:
 
 ```css
 <body>
@@ -1040,7 +1024,7 @@ Tooltip;
 </body>
 ```
 
-Showing attribute content in psuedo element:
+### Showing attribute content in psuedo element:
 
 ```html
 <body>
@@ -1059,7 +1043,7 @@ Showing attribute content in psuedo element:
 }
 ```
 
-Custom Attribute:
+### Custom Attribute:
 
 ```html
 <body>
@@ -1067,7 +1051,7 @@ Custom Attribute:
 </body>
 ```
 
-Custom Tooltip (left position)
+### Custom Tooltip (left position)
 
 ```html
 <body>
@@ -1077,17 +1061,17 @@ Custom Tooltip (left position)
 
 ```css
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    background-color: aliceblue;
-    color: rgb(0, 174, 214);
-    font-family: sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 100px 0;
+  background-color: aliceblue;
+  color: rgb(0, 174, 214);
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 100px 0;
 }
 .tooltip{
     cursor: grab;
@@ -1128,150 +1112,150 @@ body {
 }
 ```
 
-Custom Tooltip (top position)
+### Custom Tooltip (top position)
 
 ```css
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    background-color: aliceblue;
-    color: rgb(0, 174, 214);
-    font-family: sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 100px 0;
+  background-color: aliceblue;
+  color: rgb(0, 174, 214);
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 100px 0;
 }
 .tooltip {
-    cursor: grab;
-    position: relative;
+  cursor: grab;
+  position: relative;
 }
 
 .tooltip::after,
 .tooltip::before {
-    position: absolute;
-    /* left tooltip */
-    /* top: 50%;
-    right: 100%;
-    transform: translate(0, -50%); 
-    margin-right: 15px;*/
+  position: absolute;
+  /* left tooltip */
+  /* top: 50%;
+  right: 100%;
+  transform: translate(0, -50%); 
+  margin-right: 15px;*/
 /* top tooltip  */
-    bottom: 100%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-bottom: 15px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
 }
 .tooltip:hover::after,
 .tooltip:hover::before {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 .tooltip::after {
-    content: attr(data-tooltip);
-    color: #fff;
-    background-color: #222;
-    font-size: 0.3em;
-    font-weight: normal;
-    padding: 10px;
-    border-radius: 3px;
+  content: attr(data-tooltip);
+  color: #fff;
+  background-color: #222;
+  font-size: 0.3em;
+  font-weight: normal;
+  padding: 10px;
+  border-radius: 3px;
 }
 .tooltip::before {
-    content: "";
-    width: 0;
-    height: 0;
-    /* left tooltip */
-    /* border-top: 5px solid transparent;
-    border-left: 8px solid #222;
-    border-bottom: 5px solid transparent; 
-    margin-right: 7px;*/
-    /* top tooltip  */
-    border-top: 8px solid #222;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    margin-bottom: 7px;
+  content: "";
+  width: 0;
+  height: 0;
+   /* left tooltip */
+  /* border-top: 5px solid transparent;
+  border-left: 8px solid #222;
+  border-bottom: 5px solid transparent; 
+  margin-right: 7px;*/
+  /* top tooltip  */
+  border-top: 8px solid #222;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin-bottom: 7px;
 }
 ```
 
-Custom Tooltip (bottom position)
+### Custom Tooltip (bottom position)
 
 ```css
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    background-color: aliceblue;
-    color: rgb(0, 174, 214);
-    font-family: sans-serif;
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
-    margin: 100px 0;
+  background-color: aliceblue;
+  color: rgb(0, 174, 214);
+  font-family: sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 100px 0;
 }
 .tooltip {
-    cursor: grab;
-    position: relative;
+  cursor: grab;
+  position: relative;
 }
 
 .tooltip::after,
 .tooltip::before {
-    position: absolute;
-    /* left tooltip */
-    /* top: 50%;
-    right: 100%;
-    transform: translate(0, -50%); 
-    margin-right: 15px;*/
-    /* top tooltip  */
-    /* bottom: 100%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-bottom: 15px; */
-    /* bottom tooltip  */
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-top: 15px;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s;
+  position: absolute;
+  /* left tooltip */
+  /* top: 50%;
+  right: 100%;
+  transform: translate(0, -50%); 
+  margin-right: 15px;*/
+  /* top tooltip  */
+  /* bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-bottom: 15px; */
+  /* bottom tooltip  */
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s;
 }
 .tooltip:hover::after,
 .tooltip:hover::before {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 .tooltip::after {
-    content: attr(data-tooltip);
-    color: #fff;
-    background-color: #222;
-    font-size: 0.3em;
-    font-weight: normal;
-    padding: 10px;
-    border-radius: 3px;
+  content: attr(data-tooltip);
+  color: #fff;
+  background-color: #222;
+  font-size: 0.3em;
+  font-weight: normal;
+  padding: 10px;
+  border-radius: 3px;
 }
 .tooltip::before {
-    content: "";
-    width: 0;
-    height: 0;
-    /* left tooltip */
-    /* border-top: 5px solid transparent;
-    border-left: 8px solid #222;
-    border-bottom: 5px solid transparent; 
-    margin-right: 7px;*/
-    /* top tooltip  */
-    /* border-top: 8px solid #222;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent; */
-    /* bottom tooltip  */
-    border-bottom: 8px solid #222;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    margin-top: 7px;
+  content: "";
+  width: 0;
+  height: 0;
+  /* left tooltip */
+  /* border-top: 5px solid transparent;
+  border-left: 8px solid #222;
+  border-bottom: 5px solid transparent; 
+  margin-right: 7px;*/
+  /* top tooltip  */
+  /* border-top: 8px solid #222;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent; */
+  /* bottom tooltip  */
+  border-bottom: 8px solid #222;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  margin-top: 7px;
 }
 ```
 </details>
@@ -1280,32 +1264,16 @@ body {
 <summary>CSS-Day-07</summary>
 
 ### Topic:
-40.	Opacity
-41.	Dropdowns
-42.	Box Sizing
-43.	Gradients
-44.	Transforms
-45.	Homework - 10: Create 1 Navigation Bar Including Dropdowns
-46.	Homework - 11: Create 1 Product Card Using Gradients
-47. Attribute Selectors
-48. Forms
-49. Homework - 12: Create 1 Form
-50. Tooltip
-51. Homework - 13: Create 1 Tooltip
-52. Styling Images
-53. Image Reflection
-54. Object Property
-55. Masking
-56. Multiple Columns
-57. Homework - 14: Create 2 Image Gallery
-58. Specificity
-59. !important
-60. CSS Variables
-61. Math Functions
-62. Animations
-63. Homework - 15: Create 1 Animation
 
-box size problem:
+- Opacity
+- Dropdowns
+- Box Sizing
+- Gradients
+- Transforms
+- Homework - 10: Create 1 Navigation Bar Including Dropdowns
+- Homework - 11: Create 1 Product Card Using Gradients
+
+### box size problem:
 
 ```css
 .box-1{
@@ -1322,7 +1290,7 @@ box size problem:
 }
 ```
 
-solution is to use box sizing property
+### solution is to use box sizing property
 
 ```css
 .box-1{
@@ -1341,7 +1309,7 @@ solution is to use box sizing property
 }
 ```
 
-Universal selector :
+### Universal selector :
 
 ```css
 *{
@@ -1351,7 +1319,7 @@ Universal selector :
 }
 ```
 
-Column:
+### Column:
 
 ```css
 p{
@@ -1366,7 +1334,7 @@ p{
 }
 ```
 
-Filter:
+### Filter:
 
 ```css
 .image-container{
@@ -1391,70 +1359,68 @@ Filter:
 }
 ```
 
-Middle position :
+### Middle position :
 
-```bash
+```css
 div {
-    width: 400px;
-    height: 400px;
-    background-color: crimson;
-    /* middle position  */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background-color: crimson;
+  /* middle position  */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 ```
 
-Transform :
+### Transform :
 
-```bash
+```css
 div {
-    width: 400px;
-    height: 400px;
-    background-color: crimson;
-    /* middle position  */
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
-    /* transform: rotate(50deg); */
-    /* transform: scale(1.5); */
-    /* transform: scale(1.5); */
-    /* transform: skew(30deg); */
-    /* transform: translateX(100px); */
-    /* transform: translateY(100px); */
-    transform: translate(100px,100px);
+  width: 400px;
+  height: 400px;
+  background-color: crimson;
+  /* middle position  */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* transform: rotate(50deg); */
+  /* transform: scale(1.5); */
+  /* transform: scale(1.5); */
+  /* transform: skew(30deg); */
+  /* transform: translateX(100px); */
+  /* transform: translateY(100px); */
+  transform: translate(100px,100px);
 }
 ```
 
-Gradient:
+### Gradient:
 
-```bash
-# Linear Gradient (min 2 color)
-# Radial gradient
-```
+- Linear Gradient (min 2 color)
+Radial gradient
 
-Linear Gradient different ways :
+### Linear Gradient different ways :
 
 ```css
 /* background-image: linear-gradient(deeppink, purple);
-        background-image: linear-gradient(to left , deeppink, purple);
+		background-image: linear-gradient(to left , deeppink, purple);
     background-image: linear-gradient(to right , deeppink, purple);
     background-image: linear-gradient(to top , deeppink, purple);
     background-image: linear-gradient(to bottom , deeppink, purple); 
-        background-image: linear-gradient(to left top , deeppink, purple);*/
+		background-image: linear-gradient(to left top , deeppink, purple);*/
     background-image: linear-gradient(35deg , deeppink, purple);
 ```
 
-Linear Gradient different ways :
+### Linear Gradient different ways :
 
 ```css
 /* background-image: radial-gradient(closest-side at 200px 100px, tomato , crimson); */
     background-image: radial-gradient(farthest-corner at 0px 400px, tomato , crimson);
 ```
 
-Gradient:
+### Gradient:
 
 ```html
 
@@ -1465,20 +1431,20 @@ Gradient:
 
 ```css
 div {
-    width: 400px;
-    height: 400px;
-    /* background-color: deeppink; */
-    border: 1px solid lightgray;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* background-image: linear-gradient(deeppink, purple);
-    background-image: linear-gradient(to left , deeppink, purple);
+  width: 400px;
+  height: 400px;
+  /* background-color: deeppink; */
+  border: 1px solid lightgray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-image: linear-gradient(deeppink, purple);
+	background-image: linear-gradient(to left , deeppink, purple);
     background-image: linear-gradient(to right , deeppink, purple);
     background-image: linear-gradient(to top , deeppink, purple);
     background-image: linear-gradient(to bottom , deeppink, purple); 
-    background-image: linear-gradient(to left top , deeppink, purple);
+	background-image: linear-gradient(to left top , deeppink, purple);
     background-image: linear-gradient(35deg, deeppink, purple);
     background-image: linear-gradient(35deg, deeppink 60%, purple 80%);
     background-image: repeating-linear-gradient(35deg, deeppink 60%, purple 80%);*/
@@ -1488,7 +1454,7 @@ div {
 }
 ```
 
-Simple animation (using transition):
+### Simple animation (using transition):
 
 ```html
 <body>
@@ -1515,12 +1481,9 @@ Simple animation (using transition):
 }
 ```
 
-Animation;
+### Animation:
 
-```css
-/* animation: name duration timing-function delay iteration-count direction fill-mode; */
-
-```
+- `animation: name duration timing-function delay iteration-count direction fill-mode;`
 
 Keyframe Animation :
 
@@ -1573,7 +1536,7 @@ Keyframe Animation :
 }
 ```
 
-Typewriter animation using animation steps() forwards
+### Typewriter animation using animation steps() forwards
 
 ```html
 <body>
@@ -1583,34 +1546,34 @@ Typewriter animation using animation steps() forwards
 
 ```css
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
-    font-family: "Courier New", Courier, monospace;
-    text-align: center;
-    background-color: antiquewhite;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  background-color: antiquewhite;
 }
 h1 {
-    color: #444;
-    position: relative;
-    display: inline-block;
-    margin-top: 300px;
+  color: #444;
+  position: relative;
+  display: inline-block;
+  margin-top: 300px;
 }
 h1::before,
 h1::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 h1::before {
-    background-color: antiquewhite;
-    animation: typewriter 6s steps(29) forwards 1s;
+  background-color: antiquewhite;
+  animation: typewriter 6s steps(29) forwards 1s;
 }
 h1::after{
     width: 0.1em;
@@ -1619,9 +1582,9 @@ h1::after{
     blink 0.75s steps(29) forwards 1s infinite;
 }
 @keyframes typewriter {
-    to {
+  to {
     left: 100%;
-    }
+  }
 }
 @keyframes blink {
     to{
