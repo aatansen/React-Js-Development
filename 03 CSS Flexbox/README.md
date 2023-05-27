@@ -2,11 +2,12 @@
 <summary>Flexbox-Day-01</summary>
 
 ### Topic:
-64. Flexbox
-65. Project - 01: Create Your First Full Project Using Flexbox
-66. Media Queries
 
-Flexbox
+- Flexbox
+- Project - 01: Create Your First Full Project Using Flexbox
+- Media Queries
+
+### Flexbox
 
 Parent Property :
 
@@ -14,70 +15,57 @@ Parent Property :
 display: flex;
 ```
 
-Flex direction
+### Flex direction:
 
-```bash
-#flex-direction: row;  (default)
-# Flex Main Axis ➡
-# Flex Cross Axis ⬇
-But when..:
-#flex-direction: column;
-# Flex Main Axis ⬇
-# Flex Cross Axis ➡
+- `flex-direction: row;`  (default)
+- Flex Main Axis ➡
+- Flex Cross Axis ⬇
+- But when direction is mentioned
+    - `flex-direction: column;`
+    - Flex Main Axis ⬇
+    - Flex Cross Axis ➡
+    - `flex-direction: row-reverse;`
+    - Flex Main Axis ⬅
+    - Flex Cross Axis ⬇
+    - `flex-direction: column-reverse;`
+    - Flex Main Axis ⬆
+    - Flex Cross Axis ➡
 
-More direction:
-#flex-direction: row-reverse;
-# Flex Main Axis ⬅
-# Flex Cross Axis ⬇
+### Justify content
 
-#flex-direction: column-reverse;
-# Flex Main Axis ⬆
-# Flex Cross Axis ➡
-```
+- it work on main axis
+- how parent will hold the child in main axis:
+    - `justify-content: flex-start; (default)`
+    - `justify-content: flex-end;`
+    - `justify-content: space-between;`
+    - `justify-content: space-around;`
+    - `justify-content: space-evenly;`
 
-Justify content
+### Align items
 
-```bash
-it work on main axis
-how parent will hold the child in main axis:
-# justify-content: flex-start; (default)
-#		justify-content: flex-end;
-#   justify-content: space-between;
-#   justify-content: space-around;
-justify-content: space-evenly;
-```
+- works on single row/column
+- it work on cross axis
+    - `align-items: stretch; (default)`
+    - `align-items: flex-start;`
+    - `align-items: flex-end;`
+    - `align-items: center;`
+    - `align-items: baseline;` (works on line , align different shape of box on line)
 
-Align items
+### Flex-wrap
 
-```bash
-works on single row/column
-it work on cross axis
-# align-items: stretch; (default)
-# align-items: flex-start; */
-# align-items: flex-end; */
-# align-items: center;
-# align-items: baseline; (works on line , align different shape of box on line)
-```
+- it will go to new line if there is no space for child
+    - `flex-wrap: wrap;`
 
-Flex-wrap
+### Align content
 
-```bash
-    it will go to new line if there is no space for child
-#flex-wrap: wrap;
-```
+- Works on multiple row/column
+    - `align-content: space-around;`
+    - `align-content: space-between;`
+    - `align-content: flex-start;`
+    - `align-content: flex-end;`
+    - `align-content: center;`
 
-Align content
-
-```bash
-Works on multiple row/column 
-#align-content: space-around; */
-#align-content: space-between; */
-#align-content: flex-start; */
-#align-content: flex-end; */
-#align-content: center;
-```
-
-Child Property
+### Child Property
 
 ```html
 <body>
@@ -145,46 +133,34 @@ body{
 }
 ```
 
-Order
+### Order
 
-```bash
-# highest order will be on last position
+- highest order will be on last position
+    - `order: 0;`
 
-    order: 0;
+### Flex grow
 
-```
+- how much space will be taken in other division order
+    - `flex-grow: 2;`
 
-Flex grow
+### Flex shrink
 
-```bash
-# how much space will be taken in other division order
-flex-grow: 2;
-```
+- more like manual wrapping but shrink (more value means that child will be shrink more)
+- if flex wrap is in parent, flex shrink wont work
+    - `flex-shrink: 1;` (default)
 
-Flex shrink
+### Flex basis
 
-```bash
-# more like manual wrapping but shrink (more value means that child will be shrink more)
-#if flex wrap is in parent, flex shrink wont work
-flex-shrink: 1; (default)
-```
+- every child will get same space
+- parent flex wrap,child max-width will impact
+    - `flex-basis: 500px;`
 
-Flex basis
+### Flex property (short hand property) :
 
-```bash
-#every child will get same space
-# parent flex wrap,child max-width will impact 
-flex-basis: 500px;
-```
-
-Flex property (short hand property) :
-
-```bash
-#useful in child common class
-#flex wrap & width off
-# flex : grow shrink basic
-flex : 1 0 250px;
-```
+- useful in child common class
+- flex wrap & width off
+    - `flex : grow shrink basic`
+    - `flex : 1 0 250px;`
 
 </details>
 
