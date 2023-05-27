@@ -2,16 +2,16 @@
 <summary>HTML-Day-01</summary>
 
 ### Topic:
-01.	Introduction to Web Development and Environment Setup
-02.	Introduction to HTML
-03.	Headings
-04.	Paragraphs, Horizontal Rules, Line Breaks and Preformatted Texts
-05.	Text Formatting: Bold, Emphasized, Italic, Small, Strong, Subscripted, Superscripted, Inserted, Underlined and Deleted
-06.	Abbreviations, Address, Blockquotes, Citations and Inline Quotations
-07.	Comments
-08.	Hyperlinks: Reference and Target Attributes
 
-html simple template:
+- Introduction to Web Development and Environment Setup
+- Introduction to HTML
+- Headings, Paragraphs, Horizontal Rules, Line Breaks and Preformatted Texts
+- Text Formatting: Bold, Emphasized, Italic, Small, Strong, Subscripted, Superscripted, Inserted, Underlined and Deleted
+- Abbreviations, Address, Blockquotes, Citations and Inline Quotations
+- Comments
+- Hyperlinks: Reference and Target Attributes
+
+### html simple template:
 
 ```html
 <html>
@@ -23,7 +23,7 @@ html simple template:
 </html>
 ```
 
-Heading(h1) ,Paragraph(p) ,Break(br), Horizontal Rule(hr) tag:
+### Heading(h1) ,Paragraph(p) ,Break(br), Horizontal Rule(hr) tag:
 
 ```html
 <html>
@@ -46,7 +46,7 @@ Heading(h1) ,Paragraph(p) ,Break(br), Horizontal Rule(hr) tag:
 </html>
 ```
 
-Preformatted text(pre) tag:
+### Preformatted text(pre) tag:
 
 ```html
 <html>
@@ -73,7 +73,7 @@ Preformatted text(pre) tag:
 </html>
 ```
 
-Bold(b,Strong), italic(i,em),small,subscript()sub ,superscript(sup) tag:
+### Bold(b,Strong), italic(i,em),small,*subscript()sub ,superscript(sup) tag:*
 
 ```html
 <html>
@@ -99,7 +99,7 @@ Bold(b,Strong), italic(i,em),small,subscript()sub ,superscript(sup) tag:
 </html>
 ```
 
-Underline(u,ins) , Delete(del), Abbreviation(abbr),Address tag:
+### Underline(u,ins) , Delete(del), Abbreviation(abbr),Address tag:
 
 ```html
 <html>
@@ -130,7 +130,7 @@ Underline(u,ins) , Delete(del), Abbreviation(abbr),Address tag:
 </html>
 ```
 
-Blockquote,Inline quote(q),cite(tag & attribute) tag and comment,a(href) tag :
+### Blockquote,Inline quote(q),cite(tag & attribute) tag and comment,a(href) tag :
 
 ```html
 <html>
@@ -141,7 +141,7 @@ Blockquote,Inline quote(q),cite(tag & attribute) tag and comment,a(href) tag :
 
 <body>
 
-    <blockquote cite="https://en.wikipedia.org/wiki/Spider-Man">
+	<blockquote cite="https://en.wikipedia.org/wiki/Spider-Man">
         Spider-Man is a superhero appearing in American comic books published by Marvel Comics. Created by writer-editor
         Stan Lee and artist Steve Ditko, he first appeared in the anthology comic book Amazing Fantasy #15 (August 1962)
         in the Silver Age of Comic Books.
@@ -166,16 +166,17 @@ Blockquote,Inline quote(q),cite(tag & attribute) tag and comment,a(href) tag :
 <summary>HTML-Day-02</summary>
 
 ### Topic:
-09.	Create Bookmarks Using Links
-10.	Images: Src, Alt, Height and Width Attributes
-11.	Combined Images and Links
-12.	Inside Head Element
-13.	Homework - 01: Create A Simple Blog Page Using Only HTML
-14.	Lists
-15.	Tables
-16.	Homework - 02: Create A Simple Table For Your Football Team
 
-Bookmark (id,href):
+- Create Bookmarks Using Links
+- Images: Src, Alt, Height and Width Attributes
+- Combined Images and Links
+- Inside Head Element
+- Homework - 01: Create A Simple Blog Page Using Only HTML
+- Lists
+- Tables
+- Homework - 02: Create A Simple Table For Your Football Team
+
+### Bookmark (id,href):
 
 ```html
 <html>
@@ -198,7 +199,7 @@ Bookmark (id,href):
 
 ```
 
-Image and image with link:
+### Image and image with link:
 
 ```html
 <html>
@@ -215,7 +216,7 @@ Image and image with link:
 </html>
 ```
 
-Heading:
+### Heading:
 
 ```html
 <!DOCTYPE html>
@@ -232,7 +233,7 @@ Heading:
 </html>
 ```
 
-Blog with menu:
+### Blog with menu:
 
 ```html
 <!DOCTYPE html>
@@ -273,7 +274,7 @@ Blog with menu:
 </html>
 ```
 
-List:
+### List:
 
 ```html
 <!DOCTYPE html>
@@ -306,7 +307,7 @@ List:
 </html>
 ```
 
-Table:
+### Table:
 
 ```html
 <!DOCTYPE html>
@@ -319,15 +320,15 @@ Table:
 </head>
 <body>
     <table border = 1px style = "border-collapse: collapse;">
-        <caption>Marks</caption>
-        <thead>
+       <caption>Marks</caption>
+       <thead>
         <tr>
             <th>Name</th>
             <th>Roll</th>
             <th>Marks</th>
         </tr>
-        </thead> 
-        <tbody>
+       </thead> 
+       <tbody>
         <tr> <!-- row data 1 -->
             <td>Almiz</td>
             <td>23</td>
@@ -348,14 +349,14 @@ Table:
             <td>23</td>
             <td>33</td>
         </tr>
-        </tbody>
-        <tfoot></tfoot>
+       </tbody>
+       <tfoot></tfoot>
     </table>
 </body>
 </html>
 ```
 
-Nested-Table:
+### Nested-Table:
 
 ```html
 <!DOCTYPE html>
@@ -402,7 +403,7 @@ Nested-Table:
         <td>£94m</td>
         <td>FW</td>
     </tbody>
-    </table>
+   </table>
 </body>
 </html>
 ```
@@ -412,16 +413,17 @@ Nested-Table:
 <summary>HTML-Day-03</summary>
 
 ### Topic:
-17.	Favicons
-18.	Audio
-19.	Video
-20.	Iframes
-21.	Forms
-22.	Entities
-23.	Semantic Elements
-24.	Homework - 03: Create A Semantic Website For Your Online News Portal
 
-favicon (can be used before or after title):
+- Favicons
+- Audio
+- Video
+- Iframes
+- Forms
+- Entities
+- Semantic Elements
+- Homework - 03: Create A Semantic Website For Your Online News Portal
+
+### favicon (can be used before or after title):
 
 Shortcut--> link:favicon
 
@@ -441,7 +443,7 @@ Shortcut--> link:favicon
 </html>
 ```
 
-using icons8:
+### using icons8:
 
 ```
 *search any icon
@@ -451,7 +453,7 @@ using icons8:
 *now copy {Paste this fragment into your HTML} section
 ```
 
-Audio tag:
+### Audio tag:
 
 ```html
 <!DOCTYPE html>
@@ -472,7 +474,7 @@ Audio tag:
 </html>
 ```
 
-Video Tag:
+### Video Tag:
 
 ```html
 <!DOCTYPE html>
@@ -496,7 +498,7 @@ Video Tag:
 </html>
 ```
 
-Iframe Tag:
+### Iframe Tag:
 
 ```html
 <!DOCTYPE html>
@@ -516,19 +518,19 @@ Iframe Tag:
 </html>
 ```
 
-Semantic Shortcut:
+### Semantic Shortcut:
 
 ```html
 article*4>h2{Blog title - $}+p{Author: A-$ | Published: B-$}+p{This is blog body...}+a[href="#"]{Read more}
 ```
 
-entity - copyright:
+### entity - copyright:
 
 ```html
 <p>&copy;</p>
 ```
 
-Form radio & checkbox difference:
+### Form radio & checkbox difference:
 
 ```html
 <!-- Can Choose single if name = similar -->
@@ -546,7 +548,7 @@ Form radio & checkbox difference:
 <!-- on the otherhand check box can be choose all available content -->
 ```
 
-field set is used in form when there is many section using legend to organized it more
+### field set is used in form when there is many section using legend to organized it more
 
 ```html
 <fieldset>
