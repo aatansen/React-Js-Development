@@ -1,7 +1,7 @@
 <details>
 <summary>JS-Day-01</summary>
 
-Topic:
+### Topic:
 
 - Setting Up Your Code Editor
 - Introduction to JavaScript
@@ -14,7 +14,7 @@ Topic:
 - Operator Precedence
 - Problem - 02
 
-Linking JS file:
+### Linking JS file:
 
 - normally at the end of body
 - but sometimes required at top
@@ -35,7 +35,7 @@ Linking JS file:
 </html>
 ```
 
-Variable Naming
+### Variable Naming
 
 - variable naming should not start with Capital or any keyword
 
@@ -46,7 +46,7 @@ Variable Naming
 
 JavaScript has two main types of data: primitive and complex.
 
-JavaScript has six primitive data types:
+### JavaScript has six primitive data types:
 
 - Boolean
 - Null
@@ -55,7 +55,7 @@ JavaScript has six primitive data types:
 - String
 - Symbol (added in ECMAScript 6)
 
-Complex data types are:
+### Complex data types are:
 
 - Object
 - Array
@@ -72,7 +72,7 @@ Complex data types are:
 - DataView
 - Typed Arrays
 
-Re-assign or mutate (let)
+### Re-assign or mutate (let)
 
 ```jsx
 let isJsFun;
@@ -83,13 +83,13 @@ isJsFun = true;
 console.log(isJsFun);
 ```
 
-If a variable declare with cost it can’t be undefined and it cant be re-assign
+### If a variable declare with cost it can’t be undefined and it cant be re-assign
 
 ```jsx
 const isJsFun; //error
 ```
 
-Variable should not declare without keyword
+### Variable should not declare without keyword
 
 ```jsx
 name = "Tansen"; //should not use like this when declaring
