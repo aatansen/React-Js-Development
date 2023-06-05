@@ -168,15 +168,16 @@ body{
 <summary>Flexbox-Day-02</summary>
 
 ### Topic:
+
 - Photography Website (flexbox, grid,positions,root css etc)
 
-Iconscount CDN:
+### Iconscount CDN:
 
 ```css
 https://unicons.iconscout.com/release/v4.0.0/css/line.css
 ```
 
-Font (Poppins)
+### Font (Poppins)
 
 ```css
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -185,11 +186,11 @@ body{
 }
 ```
 
-Custom variable:
+### Custom variable:
 
-most useful to change whole website color,style etc
+- Most useful to change whole website color,style etc
 
-targeting root css:
+### targeting root css:
 
 ```css
 :root{
@@ -197,7 +198,7 @@ targeting root css:
 }
 ```
 
-example:
+### example:
 
 ```css
 :root{
@@ -212,13 +213,11 @@ example:
 }
 ```
 
-flex vs grid :
+### flex vs grid :
 
-```bash
-centering:
-#in flex we need to have x, y direction which is justify-content(x) & align-items(y)
-#but in grid we have only one property place-items(x,y both)
-```
+- centering:
+    - in flex we need to have x, y direction which is justify-content(x) & align-items(y)
+    - but in grid we have only one property place-items(x,y both)
 
 ```css
 nav{
