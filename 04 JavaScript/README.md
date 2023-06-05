@@ -96,3 +96,97 @@ name = "Tansen"; //should not use like this when declaring
 ```
 
 </details>
+
+<details>
+<summary>JS-Day-02</summary>
+    
+### Topic:
+
+- Different Operations in JS
+
+### Math Operations
+
+```jsx
+const currentYear = 2023;
+const ageTumpa = currentYear - 1998;
+const ageRahat = currentYear - 1996;
+console.log(ageTumpa, ageRahat);
+```
+
+### String operation
+
+```jsx
+const first_name = "Alahi";
+const last_name = "Tansen";
+console.log(first_name + " " + last_name);
+
+const bikeBrand = "Yamaha";
+const bikeModel = "MT5";
+const fullBikeName = bikeBrand + " " + bikeModel;
+console.log(fullBikeName);
+```
+
+### Assignment operator
+
+```jsx
+let number = 20 + 10;
+number = number + 5;
+number -= 10;
+console.log(number);
+```
+
+### Operator precedence
+
+```jsx
+console.log(2023>2002+16);
+```
+
+### Template literals
+
+```jsx
+const name = "Tansen"
+const age=21
+const job="student"
+const bio="My name is "+name+"."+" I am "+age+" years old."+"I am a "+job+"."
+console.log(bio);
+
+//now with template literals
+const bio2=`My name is ${name}. I am ${age} years old.I am a ${job}.`
+console.log(bio2);
+console.log(`I
+am 
+Tansen`);
+```
+
+### Conditionals or control structure
+
+```jsx
+const birthYear=1995;
+if(birthYear<=1999){
+console.log("You are a 90's kid");
+}else{
+console.log("You are not a 90's kid");
+}
+```
+
+### Type conversion(manually) and coercion(automatically)
+
+```jsx
+const inputYear=1995
+console.log(inputYear+10);
+
+const inputYear2="1995"
+console.log(inputYear2+10); //coercion(automatically) 10 will become string
+
+console.log(inputYear2-10); //coercion(automatically) 10 will become number
+```
+
+### Game
+
+```jsx
+let a="1"+1
+a-=1
+console.log(a);
+```
+
+</details>
