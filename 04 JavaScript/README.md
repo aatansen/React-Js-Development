@@ -190,3 +190,52 @@ console.log(a);
 ```
 
 </details>
+
+<details>
+<summary>JS-Day-03</summary>
+
+### Topic:
+
+- Truthy and Falsy Value
+- Equality operators
+
+### Truthy & Falsy Value
+
+- There are 5 falsy value
+    - 0
+    - ””
+    - undefined
+    - null
+    - NaN
+
+```jsx
+// Truthy & Falsy Value
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(NaN));
+console.log(Boolean(1));
+```
+
+- All others are Truthy value
+
+### Equality operators
+
+- `=` —> Assign
+- `==` or `===` —> equality
+- `! =` or `! ==` —> not equal
+- JS doesn’t type coercion, strict
+- All time use `===` , it will check strictly
+
+```jsx
+// Equality operators
+const age = "20";
+if (age === 20) {
+    console.log("You are adult"); //when "=="
+} else {
+    console.log("You are too young"); //when "==="
+}
+```
+
+</details>
