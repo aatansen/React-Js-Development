@@ -198,15 +198,19 @@ console.log(a);
 
 - Truthy and Falsy Value
 - Equality operators
+- Condition
+- AND OR
+- Switch Case
+- Ternary operator
 
 ### Truthy & Falsy Value
 
 - There are 5 falsy value
-    - 0
-    - ””
-    - undefined
-    - null
-    - NaN
+    - `0`
+    - `””`
+    - `undefined`
+    - `null`
+    - `NaN`
 
 ```jsx
 // Truthy & Falsy Value
@@ -236,6 +240,82 @@ if (age === 20) {
 } else {
     console.log("You are too young"); //when "==="
 }
+```
+
+### Nested Condition
+
+when inside a condition and it does not match it will stop there or `else` will execute if `else` is define
+
+```jsx
+if (testAge === 18) {
+    if (testNID) {
+        if (testPassport) {
+            console.log(`your age: ${testAge}, applicable for this job.`);
+        }
+    } else {
+        console.log(`Absent!`);
+    }
+
+} else if (testAge !== 18) {
+    if (testBirthReg) {
+        console.log(`your age: ${testAge}, and you're note applicable. `);
+    } else {
+        console.log(`Absent!`);
+    }
+} else {
+    console.log(`Absent!`);
+}
+```
+
+### Leap year (AND OR)
+
+```jsx
+let year = 2024;
+if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+    console.log(`${year} is a leap year.`);
+} else {
+    console.log(`${year} is not a leap year.`);
+}
+```
+
+### Switch case
+
+```jsx
+const day = "sunday";
+
+switch (day) {
+    case "saturday":
+        console.log("No Class!");
+        break;
+    case "sunday":
+        console.log("Class!!");
+        break;
+    case "monday":
+        console.log("No Class");
+        break;
+    case "tuesday":
+    case "wednesday":
+        console.log("No Class!!");
+        break;
+    case "thursday":
+    case "friday":
+        console.log("Class!!");
+        break;
+    default:
+        console.log("Not a valid day");
+        break;
+}
+```
+
+### Ternary Operator
+
+```jsx
+const a=2;
+const b=3;
+let c;
+
+a>b?c=a+b : c=b-a;
+console.log(c);
 ```
 
 </details>
