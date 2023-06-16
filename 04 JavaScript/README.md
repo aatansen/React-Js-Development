@@ -439,3 +439,33 @@ console.log(heroMaker(21,true));
 ```
 
 </details>
+
+<details>
+<summary>JS-Day-06</summary>
+
+### Topic:
+
+- Function calling function
+
+### Function calling function
+
+```jsx
+function technicalTest(ramF,cpuC){
+    const dramState = ramFreqTest(ramF)
+    const cpuState = cpuTurbo(cpuC)
+    return `${dramState} and ${cpuState}`
+
+}
+
+console.log(technicalTest(2400,1.8));
+
+function ramFreqTest(ramFreq){
+    return ramFreq>=2620?"DDR4":"DDR3"
+}
+
+function cpuTurbo(cpuClock){
+    return cpuClock>=3.1?"1800rpm":"1400rpm"
+}
+```
+
+</details>
