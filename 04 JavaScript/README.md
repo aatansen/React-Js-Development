@@ -349,3 +349,34 @@ console.log(myNumber2 / 2);
 - `let age = null;` —> Null (show as object)
 
 </details>
+
+<details>
+<summary>JS-Day-04</summary>
+
+### Strict mode
+
+```jsx
+"use strict";
+
+const private =20;
+const interface = "audio"
+console.log(private);
+```
+
+### Function: 3 ways of creating function
+
+- Function declarations
+- Function expressions
+- Arrow function
+
+Function declarations
+
+```jsx
+function sumTwo(num1,num2){
+    const sum = num1+num2
+    console.log(sum);
+}
+sumTwo(3,4)
+```
+
+</details>
