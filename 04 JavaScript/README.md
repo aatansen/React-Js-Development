@@ -353,6 +353,11 @@ console.log(myNumber2 / 2);
 <details>
 <summary>JS-Day-04</summary>
 
+### Topic:
+
+- Strict mode
+- Function in JS
+
 ### Strict mode
 
 ```jsx
@@ -377,6 +382,60 @@ function sumTwo(num1,num2){
     console.log(sum);
 }
 sumTwo(3,4)
+```
+
+</details>
+
+<details>
+<summary>JS-Day-05</summary>
+
+### Topic:
+
+- Three way of creating function
+
+### Function declarations
+
+```jsx
+// function declarations
+function addThreeNum(num1, num2, num3) {
+    const sum = num1 + num2 + num3;
+    console.log(sum);
+}
+addThreeNum(2, 3, 4);
+```
+
+### Function expressions
+
+```
+// function expression
+const juiceFactory = function (apples,oranges){
+    const juice = (apples*oranges)/2
+    return `${juice} Juice is ready using ${apples} apples and ${oranges} oranges. 🥤`
+}
+console.log(juiceFactory(10,20));
+```
+
+### Arrow function
+
+```jsx
+// arrow functions
+const addTwoNum = (num1, num2) =>{
+    const sum = num1 + num2;
+    console.log(sum);
+}
+addTwoNum(2, 3);
+
+const ageCalc = (birthYear)=>2023-birthYear;
+console.log(ageCalc(2001));
+
+const heroMaker = (heroAge,heroSkill)=>{
+    if (heroAge>=18 && heroSkill){
+        return "You can be a hero."
+    }else{
+        return "You can't be a hero"
+    }
+}
+console.log(heroMaker(21,true));
 ```
 
 </details>
