@@ -319,3 +319,33 @@ console.log(c);
 ```
 
 </details>
+
+<details>
+<summary>JS-Day-03-Exam</summary>
+
+### Type Conversion vs Type Coercion
+
+```jsx
+// Type conversion - Manual conversion
+const myNumber = "10"
+console.log(Number(myNumber));
+
+// Type coercion -  Automatic conversion
+const myNumber2 = "10"
+console.log(myNumber2 / 2);
+```
+
+### if.. else if.. else
+
+- Single condition execute
+
+### if.. if.. else
+
+- Multiple condition execute
+
+### Undefined vs Null
+
+- `let age;` —> undefined
+- `let age = null;` —> Null (show as object)
+
+</details>
