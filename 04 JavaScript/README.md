@@ -469,3 +469,112 @@ function cpuTurbo(cpuClock){
 ```
 
 </details>
+
+<details>
+<summary>JS-Day-07</summary>
+
+### Topic:
+
+- Array
+- Array methods
+- Function revision
+- Side effect calculation
+- Currying function
+- Anonymous function
+- Objects
+
+### Two way of creating array
+
+- Literal syntax
+- Array function
+
+```jsx
+// array (literal systax)
+const friend = ['Shohan', 'Badhon', 'Eklas', 'Nasim'];
+
+const years = [1991, 1993, 1995, 1999];
+
+// array (array function)
+const years2 = new Array(2001, 2003, 2005, 2009);
+```
+
+### Array methods
+
+```jsx
+// array length 
+console.log(friend.length);
+
+// push - add element at the end
+const lastBenchers = ['Shohan', 'Shuvo', 'Abdullah', 'Fahim'];
+
+lastBenchers.push('Abir');
+
+console.log(lastBenchers);
+
+// unshift - add element at the beginning
+lastBenchers.unshift('Tansen');
+console.log(lastBenchers);
+
+// pop - remove element at the end
+lastBenchers.pop();
+console.log(lastBenchers);
+
+// shift - remove element at the beginning
+lastBenchers.shift();
+console.log(lastBenchers);
+
+// indexOf - finding element by name 
+console.log(lastBenchers.indexOf('Shuvo'));
+
+// includes - if it present in array or not boolean
+console.log(lastBenchers.includes('Tansen'));
+```
+
+### Currying Array
+
+```jsx
+// currying function
+function  multi(a){
+    return function(b){
+        return function(c){
+            return function(d){
+                return function(e){
+                    return a*b*c*d*e
+                }
+            }
+        }
+    }
+}
+
+console.log(multi(5)(4)(3)(2)(1));
+```
+
+### Currying function to arrow function (lambda function)
+
+```jsx
+// lamda calculus or lamda function declarations
+const multiPro = (a) => (b) => (c) => (d) => (e) => a * b * c * d * e;
+console.log(multiPro(5)(4)(3)(2)(1));
+```
+
+### Object
+
+```jsx
+//object
+const student = {
+    firstName : "Arafat",
+    lastName : "Rahman",
+    age:19,
+    job:"Programmer",
+    firends:["Rahim","Karim","Nishi"],
+    isGoodAtGame:true,
+}
+// finding properties using two methods (dot and bracket)
+
+console.log(student.age);
+console.log(student.firends[2]);
+
+console.log(student["firstName"]);
+```
+
+</details>
