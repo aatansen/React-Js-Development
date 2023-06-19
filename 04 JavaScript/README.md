@@ -833,7 +833,7 @@ Simple definition
 
 Brief definition
 
-> JavaScript is a high level, prototype, object oriented, multi-paradigm, interpreted or just-in-time (JIT) compiled, dynamic, single threaded, garbage collected, programming language with first class functions and blocking event loop concurrency model.
+> JavaScript is a high level, prototype based, object oriented, multi-paradigm, interpreted or just-in-time (JIT) compiled, dynamic, single threaded, garbage collected, programming language with first class functions and non-blocking event loop concurrency model.
 > 
 
 ### Features of JS
