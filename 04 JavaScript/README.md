@@ -764,3 +764,128 @@ while(i<arr3.length){
 - Previous (01 - 08) day revision
 
 </details>
+
+<details>
+<summary>JS-Day-10</summary>
+
+### Topic:
+
+- NodeJS installation
+- Live server
+- Think as a programmer
+- Debug a program
+- JavaScript definition
+- Features of JS
+- JS Engines
+- V8 Engine
+
+### NodeJS installation
+
+### Live server
+
+install live-server
+
+```jsx
+npm install live-server -g
+```
+
+run live server
+
+```jsx
+live-server
+```
+
+### Think as a programmer
+
+- Define problem
+- What is the input and output of that problem
+- What I need to solve that problem
+
+```jsx
+// given an array of positive numbers "arr", find total sum of all elements
+
+// strategy:
+//input array / posivite integer >0 / arr 
+//output : sum / all elements from the array
+//1. declare a container
+//2. read all element for loop
+//3. container that will hold the sum
+
+function summation(arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+const arr = [5,2,4,1,3,5,6,9]
+
+console.log(summation(arr));
+```
+
+### JavaScript definition
+
+Simple definition
+
+> JavaScript is a high level object oriented interpreted multi paradigm programming language.
+> 
+
+Brief definition
+
+> JavaScript is a high level, prototype, object oriented, multi-paradigm, interpreted or just-in-time (JIT) compiled, dynamic, single threaded, garbage collected, programming language with first class functions and blocking event loop concurrency model.
+> 
+
+### Features of JS
+
+1. `High-level`: JavaScript is a high-level programming language, which means that it provides abstractions and features that simplify programming and hide low-level details from the programmer.
+2. `Prototype-based`: JavaScript uses a prototype-based inheritance model, where objects inherit properties and methods from other objects. This allows for easy reuse and extensibility of existing code.
+3. `Object-oriented`: JavaScript supports object-oriented programming (OOP) concepts like encapsulation, inheritance, and polymorphism through its prototype-based approach.
+4. `Multi-paradigm`: JavaScript is a multi-paradigm language, which means that it supports several different programming styles, including object-oriented, functional, and imperative programming.
+    
+    Procedural Programming:
+    
+    - Based on the concept of procedures or routines that perform specific tasks.
+    - Uses a step-by-step approach to problem-solving.
+    - Focuses on solving problems through procedures or functions that operate on data.
+    - Does not emphasize the use of objects and classes.
+    
+    Object-Oriented Programming (OOP):
+    
+    - Based on the concept of objects, which can contain data and methods to operate on that data.
+    - Encapsulates data and behavior within objects, promoting modularity and code reusability.
+    - Emphasizes concepts like inheritance, polymorphism, and encapsulation.
+    - Allows for the creation of complex applications by breaking them down into smaller, more manageable objects.
+    
+    Functional Programming:
+    
+    - Based on the concept of functions, which are used to transform data and solve problems.
+    - Treats computation as the evaluation of mathematical functions and avoids changing state and mutable data.
+    - Emphasizes immutability, purity, and higher-order functions.
+    - Promotes the creation of small, reusable functions that can be composed together to solve larger problems.
+5. `Interpreted or JIT compiled`: JavaScript can be either interpreted, meaning that code is executed on-the-fly, or just-in-time (JIT) compiled, where code is compiled at runtime for faster execution.
+6. `Dynamic`: JavaScript is a dynamically-typed language, which means that variables can change types at runtime, making it easier to write flexible code.
+7. `Single-threaded`: JavaScript is single-threaded, meaning that it only has one execution thread.
+8. `Garbage-collected`: JavaScript automatically manages memory using garbage collection, which frees up memory for objects that are no longer being used.
+9. `First-class functions`: Functions in JavaScript are first-class citizens, which means that they can be passed around as arguments and returned from other functions like any other value.
+10. `Blocking event loop concurrency model`: JavaScript uses a non-blocking event loop concurrency model, which allows for asynchronous programming using callbacks, promises, and async/await. This means that long-running tasks can be executed in the background without blocking the main thread.
+
+### JS Engines
+
+- `V8`: This is Google's high-performance JavaScript engine which is used in the Chrome web browser and Node.js.
+- `SpiderMonkey`: This is Mozilla's JavaScript engine which is used in Firefox web browser and various other Mozilla projects, Brave browser.
+- `JavaScriptCore`: This is Apple's JavaScript engine which is used in Safari web browser, as well as other Apple products like macOS and iOS.
+- `Chakra`: This is Microsoft's JavaScript engine which is used in Edge web browser and various other Microsoft products.
+- `Nashorn`: This is Oracle's JavaScript engine which is used in Java Virtual Machine (JVM) for executing JavaScript code.
+- `Rhino`: This is an open-source JavaScript engine written in Java, developed by the Mozilla Foundation. It is used in various web application servers, such as Apache Tomcat.
+- `Duktape`: This is a lightweight, embeddable JavaScript engine written in C. It is often used in embedded systems or IoT devices.
+- `JerryScript`: This is another lightweight, embeddable JavaScript engine written in C. It is specifically designed for resource-constrained devices and is used in many IoT applications
+
+### V8 Engine
+
+- `Call Stack`: The call stack is a data structure used to keep track of function calls in a program. When a function is called, a new frame is added to the top of the call stack to represent that function's execution context. As functions return, their frames are removed from the stack.
+- `Heap`: The heap is the memory area where objects are allocated and stored in a JavaScript program. The V8 engine uses a generational garbage collector to manage the heap. Objects that are no longer referenced by the program are automatically marked for garbage collection and their memory is reclaimed.
+- `Function Execution`: When a function is executed in V8, a new frame is added to the call stack with the function's local variables and arguments. As the function executes, it may create new objects that are stored in the heap. When the function returns, its frame is removed from the stack and any objects it created are eligible for garbage collection if they are no longer referenced.
+- `Memory Management`: V8 manages memory allocation using a combination of stack and heap memory. Stack memory is used to store primitive data types like numbers and Booleans as well as function call frames. Heap memory is used to store larger objects and data structures like arrays and objects.
+
+</details>
