@@ -754,3 +754,13 @@ while(i<arr3.length){
 ```
 
 </details>
+
+<details>
+<summary>JS-Day-09</summary>
+
+### Topic:
+
+- JavaScript Fundamental Recap
+- Previous (01 - 08) day revision
+
+</details>
