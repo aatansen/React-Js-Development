@@ -889,3 +889,202 @@ Brief definition
 - `Memory Management`: V8 manages memory allocation using a combination of stack and heap memory. Stack memory is used to store primitive data types like numbers and Booleans as well as function call frames. Heap memory is used to store larger objects and data structures like arrays and objects.
 
 </details>
+
+<details>
+<summary>JS-Day-11</summary>
+
+### Topic:
+
+- Scoping
+- Scope chain
+- Hosting
+- Temporal Dead Zone(TDZ)
+- This keyword
+- Referencing the same memory when copying
+
+### Scoping
+
+Space or area or environment in which a certain variable is declared
+
+- Global scope
+- Function scope
+- Block scope
+
+Global scope
+
+```jsx
+const herName = "Tumpa"; //global scope
+```
+
+Function scope
+
+```jsx
+function doMath(x, y) {
+    const sum = x + y; // function scope 
+    return sum;
+}
+```
+
+Function scope as block scope
+
+If use `use strict` all function will be block scope
+
+```jsx
+"use strict"
+function doMath(x, y) {
+    const sum = x + y; // block scope 
+    return sum;
+}
+console.log(doMath(2, 3));
+```
+
+Block scope
+
+```jsx
+if (herName === "Tumpa") {
+    const herName = "Rebecca"; //block scope
+    console.log(herName);
+} else {
+    console.log(herName);
+}
+```
+
+### Scope chain
+
+- `Scope` - Space or area or environment in which a certain variable is declared
+- `Scope of a variable`  - Where the variable is being access, accessible area of that variable
+- `var` is function scope
+- Every Scope connected through chain.
+- Scope chain works —> child to  parent
+- Parent function can’t access child variable
+- Child variable can access parent variable (inner to outer)
+
+### Hoisting
+
+Accessing variable right before its declaration
+
+- function declaration
+- var variable
+
+`let`,`const` not hoisting supported , It is Temporal Dead Zone(TDZ) when trying to accessing variable right before its declaration.
+
+Temporal Dead Zone(TDZ) Level:
+
+TDZ level 0:
+
+```jsx
+function second() {
+        const job = "Programmer";
+        console.log(`${myName} is a ${age} years old ${job}.`);
+    }
+```
+
+TDZ level 01:
+
+```jsx
+function second() {
+        console.log(1);
+        const job = "Programmer";
+        console.log(`${myName} is a ${age} years old ${job}.`);
+    }
+```
+
+TDZ level 02:
+
+```jsx
+function second() {
+        console.log(1);
+        console.log(2);
+        const job = "Programmer";
+        console.log(`${myName} is a ${age} years old ${job}.`);
+    }
+```
+
+TDZ level n:
+
+```jsx
+function second() {
+        console.log(1);
+        console.log(2);
+        const job = "Programmer";
+        console.log(`${myName} is a ${age} years old ${job}.`);
+    }
+```
+
+TDZ level when there is function:
+
+```jsx
+function second() {
+        function five(){
+            console.log(2n^3);
+        }
+        function four(){
+            console.log(2n^2);
+        }
+        function third){
+            console.log(2n^1);
+        }
+        const job = "Programmer";
+        console.log(`${myName} is a ${age} years old ${job}.`);
+    }
+```
+
+### This keyword
+
+What ever object is calling by `calAge` , `this` will follow that
+
+```jsx
+const tumpaObj = {
+    fullName :"Tumpa",
+    birthYear :1996,
+
+    calAge: function(){
+        console.log(this);
+       return 2023 - this.birthYear
+    },
+
+};
+console.log(tumpaObj.calAge());
+console.log(this);
+```
+
+### Referencing the same memory when copying
+
+`sabrinaObj.fullName` is changed but `tumpaObj.fullName` also gonna change
+
+```jsx
+const tumpaObj = {
+    fullName :"Tumpa",
+    birthYear :1996,
+
+    calAge: function(){
+        
+       return 2023 - this.birthYear
+    },
+
+};
+const sabrinaObj = tumpaObj
+sabrinaObj.fullName = "Sabrina"
+console.log(sabrinaObj,tumpaObj);
+```
+
+Arrow function does not have this keyword functionalities
+
+```jsx
+const computer = {
+    clockSpeed: 3.9,
+
+    // turboFan: function () {
+        // console.log(this);
+    //     return this.clockSpeed * 99;
+    // },
+    turboFan: () => {
+        console.log(this); // this will ppoint to window
+        return this.clockSpeed * 99;
+    },
+};
+
+console.log(computer.turboFan());
+```
+
+</details>
