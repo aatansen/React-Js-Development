@@ -1234,3 +1234,14 @@ btn2.addEventListener('click', function () {
 ```
 
 </details>
+
+<details>
+<summary>JS-Day-13</summary>
+
+### Topic:
+
+- DOM simple project
+    - Modal window project
+    - Guess my number project
+
+</details>
