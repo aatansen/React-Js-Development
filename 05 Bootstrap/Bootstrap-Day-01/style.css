@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;600;700&display=swap");
+
+body {
+  font-family: "Overpass", sans-serif !important;
+  background-color: #eaeaea;
+}
+
+.navbar {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 98;
+}
+
+.carousel {
+  margin-top: 56px !important;
+}
+
+.movie {
+  height: 550px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.movie-poster {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
