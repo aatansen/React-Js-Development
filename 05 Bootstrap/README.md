@@ -146,3 +146,14 @@ Card
 ```
 
 </details>
+
+<details>
+<summary>Bootstrap-Day-02</summary>
+
+### Topic:
+
+- Dynamically show the data
+- Modal window
+- Using basic JS on modal window
+
+</details>
